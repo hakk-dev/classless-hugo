@@ -4,7 +4,6 @@ Blank — A minimal [Hugo](https://gohugo.io/) theme without any classes. Use it
 
 **[Demo](https://classless-demo.hakk.dev/)**
 
-![Blank theme screenshot](https://github.com/Vimux/blank/blob/master/images/splash.png)
 
 ## Installation
 
@@ -29,3 +28,8 @@ Have you found a bug or got an idea for a new feature? Feel free to use the [iss
 ## License
 
 This theme is released under the [MIT license](https://github.com/hakk-dev/classless/blob/master/LICENSE).
+
+
+## Thanks 
+
+Thank you to [Vimux](https://github.com/Vimux/blank) and the wonderful blank theme (which this theme used as a base).
