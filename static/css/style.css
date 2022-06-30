@@ -1,0 +1,245 @@
+:root {
+  --body-color: #212529;
+  --body-background: #fff;
+  --light-border-color: #cbcbcb;
+  --thead-background: #e0e0e0;
+  --tr-background: #f2f2f2;
+  --ins-background: #f5ff33;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--body-color);
+  text-align: left;
+  background-color: var(--body-background);
+  padding: 10px;
+}
+
+img,
+video {
+  width: 100%;
+  height: auto;
+}
+
+blockquote {
+  border-left: 2px solid var(--light-border-color);
+  padding-left: 10px;
+}
+
+table {
+    /* Remove spacing between table cells (from Normalize.css) */
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    border: 1px solid var(--light-border-color);
+}
+
+table caption {
+    color: var(--body-color);
+    font: italic 85%/1 arial, sans-serif;
+    padding: 1em 0;
+    text-align: center;
+}
+
+table td,
+table th {
+    border-left: 1px solid var(--light-border-color);/*  inner column border */
+    border-width: 0 0 0 1px;
+    font-size: inherit;
+    margin: 0;
+    overflow: visible; /*to make ths where the title is really long work*/
+    padding: 6px 12px; /* cell padding */
+}
+
+table td:first-child,
+table th:first-child {
+    border-left-width: 0;
+}
+
+table thead {
+    background: var(--thead-background);
+    color: var(--body-color);
+    text-align: left;
+    vertical-align: bottom;
+}
+
+table td {
+    background-color: transparent;
+}
+
+/* nth-child selector for modern browsers */
+table tr:nth-child(2n-1) td {
+    background-color: var(--tr-background);
+}
+
+del { 
+  text-decoration: line-through;
+} 
+    
+ins { 
+  text-decoration:  underline;
+  background: var(--ins-background);
+} 
+    
+var, cite, dfn, .note { 
+  font-style: italic;
+} 
+    
+address { 
+  font-style: normal;
+  letter-spacing: .1em;
+} 
+    
+acronym { 
+  font-variant: small-caps;
+  letter-spacing: 0.1em;
+} 
+    
+hr  { 
+  color: var(--body-color);
+}
+
+h1 small {
+  font-family: serif;
+  font-size: 0.8em;
+  font-style: italic;
+  font-weight: 600;
+
+}
+
+header h1,
+header nav,
+main article,
+main section,
+aside,
+footer p,
+footer div {
+  float: left;
+  padding: 4px 0;
+}
+
+header h1,
+main article,
+main section,
+footer p {
+  margin-right: 1.5%;
+  width: 72.8%;
+}
+
+header nav,
+aside,
+footer span {
+  width: 23.16%;
+}
+
+main section {
+  margin-bottom: 20px;
+}
+
+header nav ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+header nav {
+  margin-top: 25px;
+}
+
+footer:not(body main *) {
+  border-top: 1px solid #ccc;
+  width: 100%;
+}
+
+footer div {
+  margin-top: 15px;
+}
+
+header:after,
+main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+main:after {
+  margin-bottom: 15px;
+}
+
+header nav a,
+footer nav a {
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  header h1,
+  header nav,
+  main article,
+  main section,
+  aside,
+  footer p,
+  footer nav {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header nav a,
+  footer nav a {
+    display: block;
+    margin-right: auto;
+    padding: 10px;
+    width: 100%;
+  }
+}
+
+/* styling */
+
+a:not(nav *) {
+  color: #ff4b33;
+  text-decoration: none;
+}
+
+a:hover:not(nav *), 
+a:focus:not(nav *) {
+  color: hotpink;
+  text-decoration: underline;
+}
+
+header h1 a,
+header h1 a:hover,
+header h1 a:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+main article h1, 
+main section summary h1 {
+  margin-bottom: 2px;
+}
+
+main article div:first-of-type, 
+main section summary div:first-of-type {
+  font-size: 14px;
+  padding-bottom: 12px;
+}
+
+main footer:before {
+  content: "";
+  display: table;
+  clear: left;
+}
+
+main footer {
+  display: block;
+  width: 100%;
+  padding-top: 20px;
+  text-align: center;
+}

@@ -1,0 +1,12 @@
+{{/*  webp  */}}
+{{ $_src := .Get "src" }}
+{{ $_src_loc := substr $_src 0 -4 }}
+{{ $_title := .Get "title" }}
+
+<figure>
+	<picture>
+	  <source srcset="{{$_src_loc}}.webp" alt="{{ $_title }}" title="{{ $_title }}" type="image/webp">
+	<img src="{{$_src}}" alt="{{ $_title }}" title="{{ $_title }}" loading="lazy">
+	</picture>
+	<figcaption>{{ $_title }}</figcaption>
+</figure>

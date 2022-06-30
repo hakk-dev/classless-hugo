@@ -1,0 +1,10 @@
+{{ define "main" }}
+		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+		<section aria-label="Posts">
+			{{ range $paginator.Pages }}
+				{{ .Render "summary" }}
+			{{ end }}
+		</section>
+			{{ partial "sidebar.html" . }}
+			{{ partial "pagination.html" . }}
+		{{ end }}

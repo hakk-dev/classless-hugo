@@ -1,0 +1,13 @@
+name = "Classless"
+license = "MIT"
+licenselink = "https://github.com/hakk-dev/classless-hugo/blob/master/LICENSE"
+description = "A minimal Hugo theme without any classes."
+homepage = "https://github.com/hakk-dev/classless-hugo/"
+demosite = "https://classless-demo.hakk.dev/"
+tags = ["blog", "plain", "classless", "starter", "development"]
+features = ["blog"]
+min_version = "0.20"
+
+[author]
+  name = "bmcculley"
+  homepage = "https://github.com/hakk-dev"
