@@ -149,7 +149,7 @@ header nav ul li {
 }
 
 header nav {
-  margin-top: 25px;
+  margin-top: 15px;
 }
 
 footer:not(body main *) {
@@ -229,6 +229,22 @@ main article div:first-of-type,
 main section summary div:first-of-type {
   font-size: 14px;
   padding-bottom: 12px;
+}
+
+main summary menu,
+main article menu {
+  margin-left: -50px;
+}
+
+main summary menu ul li,
+main article menu ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+main summary menu ul li:not(:last-child):after,
+main article menu ul li:not(:last-child):after {
+  content: ",";
 }
 
 main footer:before {

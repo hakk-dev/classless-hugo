@@ -1,13 +1,17 @@
 <summary aria-label="Single Post Summary">
 	<h1 aria-label="Post Title"><a href="{{ .Permalink }}" aria-label="Post Link">{{ .Title }}</a></h1>
 	<div datetime="{{ .Date.Format "02.01.2006 15:04"  }}">Posted on {{ .Date.Format "Jan 2, 2006" }} by {{ .Site.Params.author }}</div>
-	{{ range .Params.tags }}
-	<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-	{{ end }}
 	<div>
 		{{ .Summary }}
 		{{ if .Truncated }}
 			<a href="{{ .Permalink }}">Read more...</a>
 		{{ end }}
 	</div>
+	<menu>
+		<ul>
+	{{ range .Params.tags }}
+		<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
+	{{ end }}
+		</ul>
+	</menu>
 </summary>

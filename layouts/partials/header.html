@@ -1,5 +1,5 @@
 <header>
-	<h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a> - <small>{{ .Site.Params.description }}</small></h1>
+	<h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a> {{ if .Site.Params.description }}- <small>{{ .Site.Params.description }}</small>{{ end }}</h1>
 	{{ with .Site.Menus.main }}
 	<nav aria-label="Main Navigation">
 		<ul>

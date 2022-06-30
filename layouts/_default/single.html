@@ -7,12 +7,14 @@
 				{{ .Content }}
 			</div>
 			{{ with .Params.tags }}
-			<div>
-				<ul id="tags">
-					{{ range . }}
-					<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
-					{{ end }}
-				</ul>
+			<div style="clear: both;">
+				<menu>
+					<ul>
+						{{ range . }}
+						<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
+						{{ end }}
+					</ul>
+				</menu>
 			</div>
 			{{ end }}
 			{{ with .Site.DisqusShortname }}
